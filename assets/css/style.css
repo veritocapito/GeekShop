@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 :root{
@@ -15,6 +15,8 @@
     --whiteColor: #FFFFFF;
 }
 
+
+/* Section Header */
 header{
     display: flex;
     flex-direction: column;
@@ -94,3 +96,52 @@ input::placeholder{
     text-decoration: none;
     color: var(--primaryColor);
 }
+
+
+/* Section Hero */
+
+main{
+    display: flex;
+    height: 22rem;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    background-image: url('../img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container{
+    display: flex;
+    width: 71rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--whiteColor);
+}
+
+.hero__title{
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__btn{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: var(--primaryColor);
+}
+
+.hero__btn a{
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
