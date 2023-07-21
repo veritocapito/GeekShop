@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+:root{
+    --primaryColor: #2A7AE4;
+    --secondaryColor5x: #F5F5F5;
+    --secondaryColor50x: #A2A2A2;
+    --secondaryColor100x: #464646;
+    --whiteColor: #FFFFFF;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    background: var(--whiteColor);
+}
+
+nav{
+    display: flex;
+    width: 71rem;
+    padding: 2rem 0rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.input__container{
+    display: flex;
+    width: 24.5625rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search{
+    display: flex;
+    width: 24.5625rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1.25rem;
+    background: var(--secondaryColor5x);
+    border: none;
+}
+
+input::placeholder{
+    color: var(--secondaryColor50x);
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.iconSeach{
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.login-btn{
+    display: flex;
+    width: 11.375rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border: 1px solid var(--primaryColor);
+}
+
+.login-btn a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
