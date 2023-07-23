@@ -7,8 +7,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+li{
+    list-style:none;
 }
 
 :root{
@@ -17,6 +21,7 @@ a{
     --secondaryColor50x: #A2A2A2;
     --secondaryColor100x: #464646;
     --whiteColor: #FFFFFF;
+    --lightColor: #EAF2FD;
 }
 
 
@@ -146,7 +151,7 @@ main{
 }
 
 
-/* Section Store */
+/* Section Productos */
 
 section.products{
     display: flex;
@@ -191,3 +196,113 @@ section.products{
     gap: 0.5rem;
 }
 
+
+/* Section Contacto */
+
+section.contact{
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 7.1875rem;
+    align-self: stretch;
+    background: var(--lightColor);
+}
+
+.contact__container{
+    display: flex;
+    width: 71rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 7rem;
+}
+
+.contact__links{
+    display: flex;
+    width: 11rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-shrink: 0;
+}
+
+.contact__links li a{
+    color: var(--secondaryColor100x);
+}
+
+form input{
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.4375rem;
+    align-self: stretch;
+    border: none;
+    min-height: 2.5rem;
+    padding: 0rem 0.75rem;
+    border-bottom: solid 1px var(--secondaryColor50x);
+}
+
+form input::placeholder{
+    color: var(--secondaryColor50x);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 133.333% */
+}
+
+form textarea{
+    display: flex;
+    padding: 0.75rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 2.8125rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    min-height: 5.125rem;
+    border: none;
+    border-bottom: solid 1px var(--secondaryColor50x);
+    resize: none;
+}
+
+form textarea::placeholder{
+    color: var(--preto-50, #A2A2A2);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 125% */
+}
+
+.contact__form{
+    display: flex;
+    width: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.form__btn{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: var(--primaryColor);
+}
+
+.form__btn a{
+    color: var(--whiteColor);
+}
+
+/* Footer */
+.credits{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+}
