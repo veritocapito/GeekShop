@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/login.css">
-        <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
-        <title>Geek Shop - Login</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/producto.css">
+        <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
+        <title>Geek Shop - Agregar Producto</title>
     </head>
     <body>
         <header>
             <nav>
                 <div class="logo__container">
-                    <div><a href="./index.html" class="logo"><img src="./assets/img/Logo.png" alt="logo"></a>
+                    <div><a href="../index.html" class="logo"><img src="../assets/img/Logo.png" alt="logo"></a>
                     </div>
                     <div class="input__container">
                         <input type="search" name="search" id="search" class="search"  placeholder="¿Qué deseas buscar?"><svg class="iconSeach" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,16 +22,22 @@
                             </svg>
                     </div>
                 </div>
+                <div class="admin-btn">
+                    <a href="./dashboard.html">Menu Administrador</a>
+                </div>
             </nav>
         </header>
-        <main class="login">
-            <div class="login__container">
-                <form action="/" method="post" class="login__form">
-                    <h1 class="login__title">Iniciar Sesión</h1>
-                    <input type="email" name="email" id="email" placeholder="Escriba su correo electrónico">
-                    <input type="password" name="password" id="password" placeholder="Escriba su contraseña">
-                    <div class="login__btn">
-                        <a href="./dashboard.html">Entrar</a>
+        <main class="admin">
+            <div class="admin__container">
+                <form action="/" method="post" class="admin__form">
+                    <h1 class="admin__title">Agregar nuevo producto</h1>
+                    <input type="text" name="url" id="url" placeholder="URL de imagen">
+                    <input type="text" name="categoria" id="categoria" placeholder="Categoría">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto">
+                    <input type="text" name="precio" id="precio" placeholder="Precio del produtco">
+                    <textarea name="descripcion" id="descripcion" placeholder="Descripción del producto"></textarea>
+                    <div class="admin__btn">
+                        <a href="./dashboard.html">Agregar producto</a>
                     </div>
                 </form>
             </div>
@@ -39,7 +45,7 @@
         <section class="contact">
             <div class="contact__container">
                 <div class="contact__img">
-                    <a href="./index.html" ><img src="./assets/img/Logo.png" alt="logo"></a>
+                    <a href="../index.html" ><img src="../assets/img/Logo.png" alt="logo"></a>
                 </div>
                 <ul class="contact__links">
                     <li><a href="#">Quienes somos</a></li>

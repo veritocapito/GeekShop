@@ -1,8 +1,34 @@
-/* Section Login */
 
-main.login{
+
+.admin-btn{
     display: flex;
-    height: 65vh;
+    width: 12rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border: 1px solid var(--primaryColor);
+}
+
+.admin-btn a{
+    color: var(--primaryColor);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.admin-btn a:hover{
+    opacity:.8;
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+}
+
+/* Section admin */
+
+main.admin{
+    display: flex;
+    height: 75vh;
     padding: 2rem;
     flex-direction: column;
     justify-content: center;
@@ -12,26 +38,26 @@ main.login{
     background-color: var(--secondaryColor5x);
 }
 
-.login__container{
+.admin__container{
     display: flex;
     justify-content: center;
 }
 
-h1{
+.admin__title{
     font-size: 1.5rem;
 }
 
-.login__form{
+.admin__form{
     display: flex;
-    width: 30vw;
+    width: 40vw;
     max-width: 80%;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 1rem;
     flex-shrink: 0;
 }
 
-.login__btn{
+.admin__btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,13 +66,13 @@ h1{
     background: var(--primaryColor);
 }
 
-.login__btn a{
+.admin__btn a{
     width: 100%;
     text-align: center;
     padding: 1rem;
     color: var(--whiteColor);
 }
 
-.login__btn a:hover{
+.admin__btn a:hover{
     background-color: var(--hoverColor);
 }
