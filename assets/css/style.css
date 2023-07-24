@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -210,6 +211,38 @@ section.products{
     gap: 0.5rem;
 }
 
+/* Dashboard */
+
+.dashboard{
+    background-color: var(--secondaryColor5x);
+    padding: 1rem 0;
+}
+
+.products__title{
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+figure{
+    position: relative;
+}
+
+a.delete-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+a.update-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
 
 /* Section Contacto */
 
