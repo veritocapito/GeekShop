@@ -1,0 +1,12 @@
+{ 
+    "productos": {
+        "producto1": {
+            "id": 1,
+            "nombre":"Producto 1",
+            "precio" : "$50.98",
+            "descripcion" :"Este es el producto numero uno.",
+            "imagen" : ""
+        }
+    }
+
+}

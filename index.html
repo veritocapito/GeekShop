@@ -77,13 +77,13 @@
                         <p>$ 60,00</p>
                         <a href="#">Ver producto</a>
                     </div>
-                    <div class="products__card">
+                    <div class="products__card no-show">
                         <figure><img src="./assets/img/cat1_5.png" alt="producto"></figure>
                         <p>Producto XYZ</p>
                         <p>$ 60,00</p>
                         <a href="#">Ver producto</a>
                     </div>
-                    <div class="products__card">
+                    <div class="products__card no-show">
                         <figure><img src="./assets/img/cat1_6.png" alt="producto"></figure>
                         <p>Producto XYZ</p>
                         <p>$ 60,00</p>
@@ -132,13 +132,13 @@
                         <p>$ 60,00</p>
                         <a href="#">Ver producto</a>
                     </div>
-                    <div class="products__card">
+                    <div class="products__card no-show">
                         <figure><img src="./assets/img/cat2_5.png" alt="producto"></figure>
                         <p>Producto XYZ</p>
                         <p>$ 60,00</p>
                         <a href="#">Ver producto</a>
                     </div>
-                    <div class="products__card">
+                    <div class="products__card no-show">
                         <figure><img src="./assets/img/cat2_6.png" alt="producto"></figure>
                         <p>Producto XYZ</p>
                         <p>$ 60,00</p>
@@ -187,13 +187,13 @@
                         <p>$ 60,00</p>
                         <a href="#">Ver producto</a>
                     </div>
-                    <div class="products__card">
+                    <div class="products__card no-show">
                         <figure><img src="./assets/img/cat3_5.png" alt="producto"></figure>
                         <p>Producto XYZ</p>
                         <p>$ 60,00</p>
                         <a href="#">Ver producto</a>
                     </div>
-                    <div class="products__card">
+                    <div class="products__card no-show">
                         <figure><img src="./assets/img/cat3_6.png" alt="producto"></figure>
                         <p>Producto XYZ</p>
                         <p>$ 60,00</p>
@@ -204,29 +204,39 @@
         </section>
         <section class="contact">
             <div class="contact__container">
-                <div class="contact__img">
-                    <a href="#home" ><img src="./assets/img/Logo.png" alt="logo"></a>
-                </div>
-                <ul class="contact__links">
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Programa de fidelidad</a></li>
-                    <li><a href="#">Nuestras Tiendas</a></li>
-                    <li><a href="#">Quiero ser franquiciado</a></li>
-                    <li><a href="#">Anúncie aquí</a></li>
-                </ul>
-                <form action="/" method="post" class="contact__form">
-                    <h4>Hable con nosotros</h4>
-                    <input type="text" name="name" id="name" placeholder="Nombre">
-                    <textarea name="message" id="message" placeholder="Escribe un mensaje"></textarea>
-                    <div class="form__btn">
-                        <a href="#">Enviar mensaje</a>
+                <div class="contact__info">
+                    <div class="contact__img">
+                        <a href="#home" ><img src="./assets/img/Logo.png" alt="logo"></a>
                     </div>
+                    <ul class="contact__links">
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Programa de fidelidad</a></li>
+                        <li><a href="#">Nuestras Tiendas</a></li>
+                        <li><a href="#">Quiero ser franquiciado</a></li>
+                        <li><a href="#">Anúncie aquí</a></li>
+                    </ul>
+                </div>
+                
+                <form action="/" method="post" class="contact__form" id="form">
+                    <h4>Hable con nosotros</h4>
+                    <div class="contact__input-container">
+                        <input type="text" class="contact__input" name="nombre" id="name-container" placeholder="Nombre">
+                        <span class="contact__input-message" id="name">Ingrese un nombre válido por favor.</span>
+                    </div>
+                    <div class="contact__input-container">
+                        <textarea name="mensaje" class="contact__textarea" id="message-container" placeholder="Escribe un mensaje"></textarea>
+                        <span class="contact__input-message" id="message">Ingrese su mensaje correctamente por favor. Hasta 120 caracteres.</span>
+                    </div>
+                    <button type="submit" class="contact__button">Enviar mensaje</button>
+                    <span class="contact__input-message" id="message-success">Su mensaje fue enviado correctamente, muchas gracias!</span>
                 </form>
             </div>
         </section>
         <footer>
             <p class="credits">2023 - Desarrollado por @veritocapito</p>
         </footer>
+        <!-- Script validacion de formulario de contacto -->
+        <script src="./scripts/validaciones.js"></script>
     </body>
 </html>

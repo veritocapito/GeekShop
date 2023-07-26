@@ -24,6 +24,8 @@ li{
     --whiteColor: #FFFFFF;
     --lightColor: #EAF2FD;
     --hoverColor: #83b2f4;
+    --alertColor: #ce0000;
+    --successColor: #1ca00d;
 }
 
 
@@ -136,6 +138,7 @@ main.hero{
 .hero__container{
     display: flex;
     width: 71rem;
+    max-width: 80vw;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
@@ -254,13 +257,22 @@ section.contact{
     gap: 7.1875rem;
     align-self: stretch;
     background: var(--lightColor);
+
 }
 
 .contact__container{
     display: flex;
     width: 71rem;
+    max-width: 90vw;
     align-items: flex-start;
     justify-content: space-around;
+    gap: 7rem;
+    min-height: 45vh;
+}
+
+
+.contact__info{
+    display: flex;
     gap: 7rem;
 }
 
@@ -277,6 +289,19 @@ section.contact{
     color: var(--secondaryColor100x);
 }
 
+.contact__form{
+    display: flex;
+    width: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.contact__input-container{
+    width: 100%;
+}
+
 form input{
     display: flex;
     padding-top: 8px;
@@ -286,6 +311,7 @@ form input{
     gap: 0.4375rem;
     align-self: stretch;
     border: none;
+    width: 100%;
     min-height: 2.5rem;
     padding: 0rem 0.75rem;
     border-bottom: solid 1px var(--secondaryColor50x);
@@ -309,44 +335,71 @@ form textarea{
     flex: 1 0 0;
     align-self: stretch;
     min-height: 5.125rem;
+    width: 100%;
     border: none;
     border-bottom: solid 1px var(--secondaryColor50x);
     resize: none;
 }
 
 form textarea::placeholder{
-    color: var(--preto-50, #A2A2A2);
+    color: var(--secondaryColor50x);
     font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem; /* 125% */
 }
 
-.contact__form{
-    display: flex;
-    width: 35rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-shrink: 0;
-}
 
-.form__btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    background: var(--primaryColor);
-}
 
-.form__btn a{
+.contact__button{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background-color:  var(--primaryColor);
     color: var(--whiteColor);
     padding: 1rem;
+    font-size: 1rem ;
+    border: none;
+    cursor: pointer;
 }
 
-.form__btn a:hover{
+.contact__button:hover{
     background-color: var(--hoverColor);
 }
+
+.contact__input-container--invalid {
+    border: 1px solid var(--alertColor);
+    border-radius: 7px;
+}
+
+.contact__input-container--invalid {
+    color: var(--alertColor);
+}
+
+.contact__input-message {
+    display: none;
+}
+
+.contact__input-container--invalid {
+    color: var(--alertColor);
+    display: block;
+}
+
+.contact__input-message-error{
+    color: var(--alertColor);
+    display: block;
+    padding: 0.5rem;
+    font-size: 12px;
+    text-align: left;
+}
+
+.contact__input-message-success{
+    color: var(--successColor);
+    display: block;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
 
 /* Footer */
 .credits{
@@ -357,3 +410,68 @@ form textarea::placeholder{
     gap: 0.625rem;
     align-self: stretch;
 }
+
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    nav{
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+    }
+    
+    .hero{
+        height: 22rem;
+        padding: 2rem;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+    }
+    
+    .input__container{
+        max-width: 17rem;
+    }
+
+    .login-btn{
+        max-width: 10.375rem;
+    }
+
+    .no-show{
+        display: none;
+    }
+
+    .products__line{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .products__line-container{
+        align-self: stretch;
+        
+    }
+
+    .contact__container{
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0rem;
+    }
+
+    .contact__info{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+/*Mobile*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+
+
+}
+
